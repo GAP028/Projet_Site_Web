@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="connexion.css">
+</head>
+<body>
+    <div id="contents">
+        <div class="content">
+            <!-- Lien autour de l'icône -->
+            <a href="Watchwise.html"><div class="icon"></div></a>
+            <h1>Bienvenue!</h1>
+            <p>Entrez vos informations</p>
+            <form action="acceuil.html" method="post">
+                <!-- Champ pour email ou nom utilisateur, requis -->
+                <div class="input-container">
+                    <input type="email" id="email" name="email" placeholder="Email ou Nom utilisateur" required>
+                </div>
+                <!-- Champ pour le mot de passe, requis, avec une longueur minimale de 6 caractères et une longueur maximale de 20 caractères -->
+                <div class="input-container">
+                    <input type="password" id="mot_de_passe" name="mot_de_passe" placeholder="Mot de passe" minlength="6" maxlength="20" required>
+                    <p id="error-message" style="color: red; display: none;">Veuillez entrer une adresse email valide avant de remplir ce champ.</p>
+                </div>
+                <!-- Bouton de connexion -->
+                <div class="input-container">
+                    <button type="submit" class="button">CONNEXION</button>
+                </div>
+            </form>
+            <p>Vous n'avez pas de compte? <a href="inscription.html">Cliquez ici pour vous inscrire</a>.</p>
+        </div> 
+        <script src="acceuil.js" defer></script> <!-- Lien vers le fichier JavaScript -->
+        <script src="contrainte.js" defer></script> <!-- Lien vers le fichier JavaScript -->   
+</body>
+</html>
